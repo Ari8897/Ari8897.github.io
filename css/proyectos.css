@@ -71,10 +71,10 @@ footer{
     /* Tus estilos para dispositivos móviles aquí */
     
     p{
-        font-size: 30px;
+        font-size: 18px;
     }
     li{
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 
@@ -82,7 +82,7 @@ footer{
 @media screen and (min-width: 601px) and (max-width: 992px) {
     /* Tus estilos para tabletas aquí */
     p{
-        font-size: 24px;
+        font-size: 18px;
     }
     li{
       font-size: 24px;
@@ -93,7 +93,7 @@ footer{
 @media screen and (min-width: 993px) {
     /* Tus estilos para escritorio aquí */
     p{
-        font-size: 20px;
+        font-size: 18px;
     }
     li{
       font-size: 20px;
