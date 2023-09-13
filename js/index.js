@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var slice_id = document.querySelectorAll('.slider');
     var inst_slice = M.Slider.init(slice_id,{
         height:600,
-        indicators: true
+        indicators: false
     });
     
     //inicia slide de inicio
