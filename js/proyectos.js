@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     //inicia menu side
-    var burger = document.querySelectorAll('.sidenav');
-    var inst_burger = M.Sidenav.init(burger, {});    
+    //var burger = document.querySelectorAll('.sidenav');
+    //var inst_burger = M.Sidenav.init(burger, {});    
 
     //inicia scrollpy
     var scroll_id = document.querySelectorAll('.scrollspy');

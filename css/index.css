@@ -6,9 +6,9 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-image: url('/assets/img/39.png');
-    background-size: contain;
-    background-blend-mode:lighten;    
-    background-color: rgb(238, 221, 243);
+    background-size: contain; 
+    background-blend-mode: darken;      
+    background-color: rgb(243, 227, 248);
     background-repeat: repeat;
   }
 
@@ -60,7 +60,7 @@ footer{
 }
 
 .card:hover {
-  background-color: #e3c1f3; /* Cambia el color de fondo al hacer hover */
+  background-color: #eed7f8; /* Cambia el color de fondo al hacer hover */
   color: #050505; /* Cambia el color del texto al hacer hover */
 
   

@@ -6,8 +6,8 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-image: url('/assets/img/39.png');
-    background-size: contain;
-    background-blend-mode:lighten;    
+    background-size: contain; 
+    background-blend-mode: darken;       
     background-color: rgb(246, 223, 253);
     background-repeat: repeat;
   }
