@@ -31,12 +31,19 @@ nav{
     
 }
 
+.sidenav li a { 
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+
+
 .parallax-container {
   height: 250px;
   
-  
-  
 }
+
+
 
 sobre_mimg{
     max-width: 300px;
