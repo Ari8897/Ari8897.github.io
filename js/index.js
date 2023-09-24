@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     
     //inicia menu side
@@ -8,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var slice_id = document.querySelectorAll('.slider');
     var inst_slice = M.Slider.init(slice_id,{
         height:600,
-        indicators: false
+        indicators: true
     });
     
     //inicia slide de inicio
@@ -21,11 +22,16 @@ document.addEventListener('DOMContentLoaded', function() {
         throttle: 5,
         scrollOffset: 100
     });
+
+
+    
+    // Inicializa la página con el contenido predeterminado en el idioma especificado
+     changeLanguage('es');
    
 })
 
 // Función para animar un elemento cuando entra al viewport
-function animarElementoOnScroll(elementoId) {
+    function animarElementoOnScroll(elementoId) {
     const elemento = document.querySelector(elementoId);
   
     // Verificar si el elemento está dentro del viewport

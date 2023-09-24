@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html lang="en">
+  <html lang="es">
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -7,57 +7,55 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="../css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="../css/proyectos.css">
-  <title>Mi portafolio</title> 
+  <title>🌈 Mi portafolio</title> 
    <style>  
    </style>
   </head>  
-  <body>   
+  <body> 
+    <div class="navbar-fixed"> 
     <nav>
       <div class="nav-wrapper">
-        <ul class="left">
-          <li><a href="/index.html" class="brand-logo left"><i class="large material-icons" id="casa_home">home</i></a></li>
+        <ul class="left">            
+          <li><a href="/index.html" class="btn-floating btn-medium waves-effect waves-light  deep-purple lighten-3"><i class="material-icons center">home</i></a></li>       
+          <li><a class="waves-effect waves-light btn  deep-purple lighten-3" onclick="changeLanguage('es')">Es</a></li>
+          <li><a class="waves-effect waves-light btn  deep-purple lighten-3" onclick="changeLanguage('en')">En</a></li>
         </ul>
-      </div>
-    </nav>    
+      </div> 
+    </nav> 
+  </div>    
     <main>              
-      <div class="row container">
-        <h3>Análisis sobre la Salud Mental de estudiantes universitarios.</h3>
-        <i class="large material-icons" id="rocket">
-          rocket_launch
-        </i>
-        <div class="col s12 m12 l12 purple lighten-4 hoverable">
-          <blockquote>
-            <b>Herramientas: </b> SQL, DB browser, Python, Jupyter Notebook, Jupyter Lab.
-          </blockquote>
-        </div>          
-    <div class="col s12 m12 l12">      
-      <p>En este proyecto, me sumergí en el análisis de un conjunto de datos descargado desde 
-        Kaggle que proporcionaba información detallada sobre estudiantes universitarios en los Estados Unidos.</p>
-          <p> La tabla comprendía datos sobre la presencia de ansiedad, depresión y ataques de pánico en 
-            los estudiantes, así como información sobre si recibían tratamiento especializado. Además, incluía detalles 
-            sobre el nivel del curso, la especialización, la edad y el género de los estudiantes.</p>
-      <ol>
-      <li>Comencé por descargar el archivo CSV desde Kaggle, que contenía toda la información necesaria. 
-        Luego, utilicé Python en un entorno Jupyter Notebook para abrir el archivo CSV y cargar los datos en una 
-        base de datos SQLite. Esto me permitió realizar consultas SQL en los datos para obtener información relevante.</li>
-      <br><img src="/assets/img/portafolio/estudiantes_eeuu/jupyternot.png" class="responsive-img materialboxed"><br>
-      <img src="/assets/img/portafolio/estudiantes_eeuu/tabla_sql.png" class="responsive-img materialboxed"> <br>
-      <li>Análisis con SQL: calculé la cantidad de estudiantes que tienen depresión, ansiedad y ataques de pánico.</li>
-      <br><img src="/assets/img/portafolio/estudiantes_eeuu/3.png" class="responsive-img materialboxed"><br>
-      <li>Análisis con SQL: el promedio de edad por género.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/5.png" class="responsive-img materialboxed"><br>
-      <li>Análisis con SQL: calculé el promedio de CGPA (Grade Point Average) por género.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/6.png" class="responsive-img materialboxed"><br>
-      <li>Análisis con SQL: la cantidad de estudiantes con un tratamiento especial, agrupado por año de estudio.</li><br><img src=/assets/img/portafolio/estudiantes_eeuu/7.png class="responsive-img materialboxed"><br>
-      <li>Análisis con SQL: edad promedio de estudiantes con tratamientos especializados por género.</li><br><img src=/assets/img/portafolio/estudiantes_eeuu/8.png class="responsive-img materialboxed">  
-    </ol>  
-        <p>Luego de realizar las consultas SQL y obtener los resultados, trasladé los datos a un entorno Jupyter Lab.</p><br><img src="/assets/img/portafolio/estudiantes_eeuu/lab1.png" class="responsive-img materialboxed"><br>
-    <ol>
-    <li>Utilicé bibliotecas de visualización de datos como Matplotlib para crear gráficos informativos y representativos. En primer lugar genere un gráfico para visualizar la cantidad de alumnos que tienen depresión.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/gf1.png" class="responsive-img materialboxed"><img src="/assets/img/portafolio/estudiantes_eeuu/gf2.png" class="responsive-img materialboxed">
-    <br><li>Y luego, generé gráficos de barras para mostrar la cantidad de estudiantes con ansiedad, depresión y ataques de pánico.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/gf3.png" class="responsive-img materialboxed"><br><img src="/assets/img/portafolio/estudiantes_eeuu/gf5.png" class="responsive-img materialboxed"><br><img src="/assets/img/portafolio/estudiantes_eeuu/gf6.png" class="responsive-img materialboxed">
-  </ol>
-   <p>Este proyecto me permitió explorar en profundidad la situación de los estudiantes universitarios en relación con la ansiedad, la depresión y los tratamientos especializados. </p>
-   <p>Además, pude analizar estadísticas clave, como la edad promedio y el desempeño académico. La combinación de consultas SQL y visualizaciones en Jupyter Lab proporcionó una visión completa de los datos y ayudó a identificar patrones y tendencias importantes. Este análisis puede ser útil para las instituciones educativas en la identificación de necesidades y la implementación de apoyos adicionales para los estudiantes.</p>  
-  </div>
-  </div> 
+        <div class="row container">
+          <h3 id="titu67">Análisis sobre la Salud Mental de estudiantes universitarios.</h3>
+          <div class="col s12 m12 l12 purple lighten-4 hoverable">
+            <blockquote>
+              <b id="titu68">Herramientas: SQL, DB browser, Python, Jupyter Notebook, Jupyter Lab.</b>
+            </blockquote>
+          </div>          
+                  <div class="col s12 m12 l12">      
+                  <p id="titu69">En este proyecto, me sumergí en el análisis de un conjunto de datos descargado desde Kaggle que proporcionaba información detallada sobre estudiantes universitarios en los Estados Unidos.</p>
+                  <p id="titu70">La tabla comprendía datos sobre la presencia de ansiedad, depresión y ataques de pánico en los estudiantes, así como información sobre si recibían tratamiento especializado. Además, incluía detalles sobre el nivel del curso, la especialización, la edad y el género de los estudiantes.</p>
+                  <ol>
+                  <li id="titu71">Comencé por descargar el archivo CSV desde Kaggle, que contenía toda la información necesaria. Luego, utilicé Python en un entorno Jupyter Notebook para abrir el archivo CSV y cargar los datos en una base de datos SQLite. Esto me permitió realizar consultas SQL en los datos para obtener información relevante.</li>
+                  <br><img src="/assets/img/portafolio/estudiantes_eeuu/jupyternot.png" class="responsive-img materialboxed"><br>
+                  <img src="/assets/img/portafolio/estudiantes_eeuu/tabla_sql.png" class="responsive-img materialboxed"> <br>
+                  <li id="titu72">Análisis con SQL: calculé la cantidad de estudiantes que tienen depresión, ansiedad y ataques de pánico.</li>
+                  <br><img src="/assets/img/portafolio/estudiantes_eeuu/3.png"  class="responsive-img materialboxed"><br>
+                  <li id="titu73">Análisis con SQL: el promedio de edad por género.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/5.png"  class="responsive-img materialboxed"><br>
+                  <li id="titu74">Análisis con SQL: calculé el promedio de CGPA (Grade Point Average) por género.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/6.png"  class="responsive-img materialboxed"><br>
+                  <li id="titu75">Análisis con SQL: la cantidad de estudiantes con un tratamiento especial, agrupado por año de estudio.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/7.png"  class="responsive-img materialboxed"><br>
+                  <li id="titu76">Análisis con SQL: edad promedio de estudiantes con tratamientos especializados por género.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/8.png"  class="responsive-img materialboxed">  
+                </ol>  
+                  <p id="titu77">Luego de realizar las consultas SQL y obtener los resultados, trasladé los datos a un entorno Jupyter Lab.</p><br><img src="/assets/img/portafolio/estudiantes_eeuu/lab1.png" class="responsive-img materialboxed"><br>
+                <ol>
+                <li id="titu78">Utilicé bibliotecas de visualización de datos como Matplotlib para crear gráficos informativos y representativos. En primer lugar genere un gráfico para visualizar la cantidad de alumnos que tienen depresión.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/gf1.png" class="responsive-img materialboxed"><img src="/assets/img/portafolio/estudiantes_eeuu/gf2.png"  class="responsive-img materialboxed">
+                <br>
+                <li id="titu79">Y luego, generé gráficos de barras para mostrar la cantidad de estudiantes con ansiedad, depresión y ataques de pánico.</li><br><img src="/assets/img/portafolio/estudiantes_eeuu/gf3.png" class="responsive-img materialboxed"><br><img src="/assets/img/portafolio/estudiantes_eeuu/gf5.png"  class="responsive-img materialboxed"><br><img src="/assets/img/portafolio/estudiantes_eeuu/gf6.png"  class="responsive-img materialboxed">
+                </ol>
+                <p id="titu80">Este proyecto me permitió explorar en profundidad la situación de los estudiantes universitarios en relación con la ansiedad, la depresión y los tratamientos especializados. </p>
+                <p id="titu81">Además, pude analizar estadísticas clave, como la edad promedio y el desempeño académico. La combinación de consultas SQL y visualizaciones en Jupyter Lab proporcionó una visión completa de los datos y ayudó a identificar patrones y tendencias importantes. Este análisis puede ser útil para las instituciones educativas en la identificación de necesidades y la implementación de apoyos adicionales para los estudiantes.</p>  
+              </div>
+              <a href="looker.html" class="btn-floating btn-large waves-effect waves-light deep-purple lighten-2 right"><i class="material-icons">arrow_forward</i></a>
+              </div>   
   <div class="fixed-action-btn">
     <a href="#" id="#slice_id" class="btn-floating btn-large pink pulse">
     <i class="material-icons">keyboard_arrow_up</i></a>
@@ -67,29 +65,33 @@
     <div class="container  section scrollspy" id="contacto">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">¡Tu interés significa mucho! 🚀 
-          <br>¡Gracias por visitar!  </h5>      
+          <p class="white-text" id="titu83">¡Tu interés significa mucho! 🚀 </p>
+          <p id="titu85">¡Gracias por visitar! </p>      
         </div>
         <div class="col l4 offset-l2 s12">
           <!--links del footer-->
-          <b><h5 class="white-text">Contacto</h5></b>
-          <ul>              
-            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/arianasp/" target="_blank"><i class="fab fa-linkedin"></i>  LinkedIn</a></li>
-            <li><a class="grey-text text-lighten-3" href="./assets/files/CV_ArianaSpenza.pdf" target="_blank"><i class="fas fa-file"></i></i> Descarga mi CV</a></li>
-            <li><a class="grey-text text-lighten-3" href="mailto:arianaspenza@hotmail.com"><i class="fas fa-envelope"v></i> arianaspenza@hotmail.com</a></li>
+          <b><h5 class="white-text" id="titu84">Contacto</h5></b>
+          <ul>                
+            <li><a class="white-text text-lighten-3" href="/assets/files/CV_SpenzaAriana_es.pdf" target="_blank"><i class="material-icons left">file_download</i> CV Español</a></li>
+            <li><a class="white-text text-lighten-3" href="/assets/files/CV_SpenzaAriana_en.pdf" target="_blank"><i class="material-icons left">file_download</i> CV English</a></li>
+            <li><a class="white-text text-lighten-3" href="mailto:arianaspenza@hotmail.com"><i class="material-icons left">email</i> arianaspenza@hotmail.com</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
+      <div class="container" id="titu86">
       Portafolio de Ariana Spenza
       </div>
     </div>
-  </footer>
-       
+  </footer>       
     <script src="../js/materialize.min.js"></script>
     <script src="../js/proyectos.js"></script>  
+         <!--i18 nxt libreria-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.1/i18next.min.js" integrity="sha512-C2hlr1aDo7JovvX0ek3m40fkT5+/DDgHY6rL+mcYODMLn2sZ+rKBDSIdO0NU7Yzai7WMJdhTUNEeWICljXrycQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <!-- Carga los archivos JSON como módulos ES6 -->
+  <script type="text/javascript" src="/traslations/traslate_py2.js"></script>
   
   </body>  
   

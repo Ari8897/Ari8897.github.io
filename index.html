@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-  <html lang="en">
+  <html lang="es">
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
   <link rel="stylesheet" href="./css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="./css/index.css">
   <title>🌈Ariana Spenza</title> 
@@ -15,16 +15,18 @@
     <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Ariana Spenza</a>
+        <a href="#!" class="brand-logo" style="margin-left: 1rem;">Ariana Spenza</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-                   <li><a class="item_nav" href="#slice_id">Inicio</a></li>
-                    <li><a class="item_nav" href="#sobre_mí">Sobre mí</a></li>
-                    <li><a class="item_nav" href="#servicios">Servicios</a></li>                   
-                    <li><a class="item_nav" href="#certificados">Certificados</a></li> 
-                    <li><a class="item_nav" href="#herramientas">Conocimientos</a></li> 
-                    <li><a class="item_nav" href="#portafolio">Proyectos</a></li>                  
-                    <li><a class="item_nav" href="#contacto">Contacto</a></li>
+                   <li><a class="item_nav" href="#slice_id" id="titu9">Inicio</a></li>
+                    <li><a class="item_nav" href="#sobre_mí" id="titu10">Sobre mí</a></li>
+                    <li><a class="item_nav" href="#servicios" id="titu11">Servicios</a></li> 
+                    <li><a class="item_nav" href="#portafolio" id="titu14">Proyectos</a></li>                     
+                    <li><a class="item_nav" href="#certificados" id="titu12">Certificados</a></li> 
+                    <li><a class="item_nav" href="#herramientas" id="titu13">Conocimientos</a></li>                                    
+                    <li><a class="item_nav" href="#contacto" id="titu15">Contacto</a></li>
+                    <li><a class="waves-effect waves-light btn pink"  onclick="changeLanguage('es')">Es</a></li>
+                    <li><a class="waves-effect waves-light btn pink" style="margin-left:-1px;" onclick="changeLanguage('en')">En</a></li>
         </ul>
       </div>
     </nav>  
@@ -32,19 +34,23 @@
     <ul class="sidenav" id="mobile-demo">
                     <li><div class="user-view">
                       <div class="background">
-                        <img src="/assets/img/fondo_rosa.png">
+                        <img src="/public/assets/img/fondo_rosa.png">
                       </div>
-                      <a href="#user"><img class="circle" src="/assets/img/foto_cv.jpeg"></a>
+                      <a href="#user"><img class="circle" src="/public/assets/img/foto_cv.jpeg"></a>
                       <a href="#name"><span class="white-text name">Ariana Spenza</span></a>
-                      <a href="#email"><span class="white-text email">arianaspenza@hotmail.com</span></a>
+                      <a href="#email"><span class="white-text email">arianaspenza@hotmail.com</span></a>                      
                     </div></li>
-                    <li><a class="item_nav white-text sidenav-close" href="#slice_id">Inicio</a></li>
-                    <li><a class="item_nav white-text sidenav-close" href="#sobre_mí">Sobre mí</a></li>
-                    <li><a class="item_nav white-text sidenav-close" href="#servicios">Servicios</a></li>            
-                    <li><a class="item_nav white-text sidenav-close" href="#certificados">Certificados</a></li>
-                    <li><a class="item_nav white-text sidenav-close" href="#herramientas">Conocimientos</a></li> 
-                    <li><a class="item_nav white-text sidenav-close" href="#portafolio">Proyectos</a></li>                   
-                    <li><a class="item_nav white-text sidenav-close" href="#contacto">Contacto</a></li>
+                    <div class="center-align">
+                      <a class="waves-effect waves-light btn pink" onclick="changeLanguage('es')">Es</a>
+                      <a class="waves-effect waves-light btn pink" onclick="changeLanguage('en')">En</a>
+                    </div>                    
+                    <li><a class="item_nav white-text sidenav-close" href="#slice_id" id="titu16">Inicio</a></li>
+                    <li><a class="item_nav white-text sidenav-close" href="#sobre_mí" id="titu17">Sobre mí</a></li>
+                    <li><a class="item_nav white-text sidenav-close" href="#servicios" id="titu18" >Servicios</a></li> 
+                    <li><a class="item_nav white-text sidenav-close" href="#portafolio" id="titu21">Proyectos</a></li>            
+                    <li><a class="item_nav white-text sidenav-close" href="#certificados" id="titu19">Certificados</a></li>
+                    <li><a class="item_nav white-text sidenav-close" href="#herramientas" id="titu20">Conocimientos</a></li>                                  
+                    <li><a class="item_nav white-text sidenav-close" href="#contacto" id="titu22">Contacto</a></li>                    
                     <li><div class="divider"></div></li>
                     <br>
                     <li style="display: flex;"><a class="white-text" href="https://github.com/Ari8897" target="_blank">
@@ -63,73 +69,54 @@
           <li>
             <img src="./assets/img/fondo_rosa.png"> 
             <div class="caption center-align">
-              <h2>¡Bienvenidos a mi Portafolio!</h2>
-              <h5 class="light grey-text text-lighten-3">Descubrí el análisis de datos con un toque creativo.</h5>
-              <br>
-              <div class="row center">        
-                <a href="#sobre_mí"  class="btn-large waves-effect waves-light pink pulse">Ver más</a>
-              </div>
+              <h2 id="titu1">¡Bienvenidos a mi Portafolio!</h2>
+              <h5 id="titu2" class="light grey-text text-lighten-3">Descubrí el análisis de datos con un toque creativo.</h5>              
             </div>            
           </li>
           <li>
             <img src="./assets/img/fondo_rosa.png"> 
             <div class="caption left-align">
-              <h2>Análisis de Datos</h2>
-              <h4 class="light grey-text text-lighten-3">Limpieza, transformación y análisis de los datos.</h4>
-              <br>
-              <div class="row left">        
-                <a href="#sobre_mí"  class="btn-large waves-effect waves-light pink pulse">Ver más</a>
-              </div>
+              <h2 id="titu3" >Análisis de Datos</h2>
+              <h4 id="titu4" class="light grey-text text-lighten-3">Limpieza, transformación y análisis de los datos.</h4>              
             </div>
           </li>
           <li>
             <img src="./assets/img/fondo_rosa.png"> 
             <div class="caption right-align">
-              <h2> Visualización de Datos</h2>
-              <h4 class="light grey-text text-lighten-3">Diseño de dashboards dinámicos.</h4>
-              <br>
-              <div class="row right">        
-                <a href="#sobre_mí"  class="btn-large waves-effect waves-light pink pulse">Ver más</a>
-              </div>
+              <h2 id="titu5">Visualización de Datos</h2>
+              <h4 id="titu6" class="light grey-text text-lighten-3">Diseño de dashboards dinámicos.</h4>                         
             </div>
           </li>
           <li>
             <img src="./assets/img/fondo_rosa.png"> 
             <div class="caption center-align">
-              <h2>Marketing Digital</h2>
-              <h4 class="light grey-text text-lighten-3">Transformando Datos en estrategias digitales.</h4>
-              <br>
-              <div class="row center">        
-                <a href="#sobre_mí"  class="btn-large waves-effect waves-light pink pulse">Ver más</a>
-              </div>
+              <h2 id="titu7">Marketing Digital</h2>
+              <h4 id="titu8" class="light grey-text text-lighten-3">Transformando Datos en estrategias digitales.</h4>              
             </div>            
           </li>
     </ul>    
   </div> 
   <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+    <div class="no-pad-bot">
       <div class="container">                      
         <div class="row"> 
-          <h5 class="header col s12 black-text">Los datos revelan el camino hacia<br> la toma de decisiones inteligentes.</h5>         
+          <h5 id="titu23" class="header col s12 black-text">Los datos revelan el camino hacia<br> la toma de decisiones inteligentes.</h5>         
         </div>                
-      </div>
-    </div>
+      </div>      
+    </div>   
     <div class="parallax"><img src="./assets/img/compunueva3.png" alt="Unsplashed background img 1"></div>
   </div>
   <!--   sobre mi   -->
-  <div class="container">
-    <i class="large material-icons" id="rocket">
-      rocket_launch
-    </i>
+  <div class="container">    
   <div class="white card section scrollspy hoverable" id="sobre_mí">
-    <h1 class="header center black-text text-lighten-1">Sobre mí</h1>
+    <h1 id="titu24" class="header center black-text text-lighten-1">Sobre mí</h1>
     <div class="row"> 
     <div class="col s8 offset-s2 m6 offset-m3 l4 center-align">
         <img src="./assets/img/foto_cv.jpeg" id="sobre_mimg"  class="responsive-img">
     </div>     
     <div class="col s12 m12 l8">
-      <p class="grey-text text-darken-3 lighten-3 "> ¡Hola! 👋 Soy Ariana, tengo 26 años y vivo en la ciudad de Bahía Blanca. Soy Licenciada en Organización Industrial y actualmente estoy introduciéndome en el mundo del análisis de datos, donde descubrí que la combinación de datos y creatividad puede impulsar el éxito en las estrategias digitales 📊.</p>        
-        <p class="grey-text text-darken-3 lighten-3 ">Estoy acá para presentarte mis proyectos y mostrarte cómo tomar decisiones más informadas a través de los datos.</p>
+      <p class="grey-text text-darken-3 lighten-3" id="titu25"> ¡Hola! 👋 Soy Ariana, tengo 26 años y vivo en la ciudad de Bahía Blanca. Soy Licenciada en Organización Industrial y actualmente estoy introduciéndome en el mundo del análisis de datos, donde descubrí que la combinación de datos y creatividad puede impulsar el éxito en las estrategias digitales 📊.</p>        
+        <p class="grey-text text-darken-3 lighten-3" id="titu26">Estoy acá para presentarte mis proyectos y mostrarte cómo tomar decisiones más informadas a través de los datos.</p>
         <text class="right" id="mi_mirm"><b>Ariana.</b></text>
     </div>                  
     </div>
@@ -141,11 +128,7 @@
       <div class="container">
         <br><br>        
         <div class="row center">          
-        </div>
-        <div class="row center">
-          <a href="#servicios"  class="btn-large waves-effect waves-light pink lighten-1">Ver más</a>
-        </div>
-        <br><br>
+        </div>             
       </div>
     </div>
     <div class="parallax"><img src="./assets/img/p2.png" alt="Unsplashed background img 1"></div>
@@ -153,34 +136,35 @@
   <!--   servicios con iconos   -->
   <div class="container section scrollspy" id="servicios">
     <div class="section">
-      <h1 class="header center black-text text-lighten-1">Servicios</h1>
+      <h1 class="header center black-text text-lighten-1" id="titu27">Servicios</h1>
+      <div class="divider"></div>
       <div class="row">
         <div class="col s10 offset-s1 m6 offset-m3 l3 hoverable ss_card">
           <div class="icon-block">
             <h2 class="center black-text"><i class="large material-icons">computer</i></h2>
-            <h5 class="center">Análisis de Datos</h5>
-            <p class="light">Análisis de datos utilizando herramientas como Power Query, Excel, Access Y SQL.</p>
+            <h5 class="center" id="titu28">Análisis de Datos</h5>
+            <p class="light" id="titu29">Análisis de datos utilizando herramientas como Power Query, Excel, Access Y SQL.</p>
           </div>
         </div>
         <div class="col s10 offset-s1 m6 offset-m3 l3 hoverable ss_card">
           <div class="icon-block">
             <h2 class="center black-text"><i class="large material-icons">dashboard</i></h2>
             <h5 class="center">Dashboards</h5>
-            <p class="light">Visualizaciones de datos efectivas utilizando herramientas como Tableau, Looker y Power BI.</p>
+            <p class="light" id="titu30">Visualizaciones de datos efectivas utilizando herramientas como Tableau, Looker y Power BI.</p>
           </div>
         </div>
         <div class="col s10 offset-s1 m6 offset-m3 l3 hoverable ss_card">
           <div class="icon-block">
             <h2 class="center black-text"><i class="large material-icons">settings</i></h2>
             <h5 class="center">Business Intelligence</h5>
-            <p class="light">Soluciones de Business Intelligence que permiten a las empresas tomar decisiones más informadas.</p>
+            <p class="light" id="titu31">Soluciones de Business Intelligence que permiten a las empresas tomar decisiones más informadas.</p>
           </div>
         </div>
         <div class="col s10 offset-s1 m6 offset-m3 l3 hoverable ss_card">
           <div class="icon-block">
             <h2 class="center black-text"><i class="large material-icons">assessment</i></h2>
-            <h5 class="center">Análisis de Redes Sociales y Estrategias</h5>
-            <p class="light">Desarrollo estrategias de marketing digital respaldadas por análisis de datos. </p>
+            <h5 class="center" id="titu32">Análisis de Redes Sociales y Estrategias</h5>
+            <p class="light" id="titu33">Desarrollo estrategias de marketing digital respaldadas por análisis de datos.</p>
           </div>
         </div>  
       </div>      
@@ -192,19 +176,161 @@
       <div class="container">
         <br><br>        
         <div class="row center">          
-        </div>
-        <div class="row center">
-          <a href="#certificados"  class="btn-large waves-effect waves-light pink lighten-1">Ver más</a>
-        </div>
-        <br><br>
+        </div>            
       </div>
     </div>
     <div class="parallax"><img src="./assets/img/p2.png" alt="Unsplashed background img 1"></div>
   </div>
+  <div class="container section scrollspy" id="portafolio">
+    <div class="section">
+      <h1 class="header center black-text text-lighten-1" id="titu44">Proyectos</h1>
+      <div class="divider"></div>
+      <!--   portafolio   -->
+      <div class="container">        
+      <div class="row">
+        <div class="col s12 m12 l6">
+          <div class="icon-block"> 
+            <a href="./views/marketing.html" class="black-text">           
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/portafolio/campaña/marketing_excel.png">
+              </div>
+              <div class="card-content">    
+                <div class="progress  purple">
+                  <div class="indeterminate"></div>
+                </div>                          
+                <p id="titu45">Guía de 10 pasos para evaluar el impacto de una campaña publicitaria.</p> 
+              </div>
+            </a>    
+              <div class="card-action" >
+                <b><a class="black-text" href="./views/marketing.html" id="titu46">Ver proyecto</a></b>
+              </div>          
+            </div>
+          </div>
+        </div> 
+        <div class="col s12 m12 l6">
+          <div class="icon-block">
+            <a href="./views/estudianteseeuu.html" class="black-text"> 
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/portafolio/estudiantes_eeuu/1.png">
+              </div>
+              <div class="card-content"> 
+                <div class="progress purple">
+                  <div class="indeterminate"></div>
+                </div>                            
+                <p id="titu47">Análisis sobre la Salud Mental de estudiantes universitarios.</p>
+              </div> 
+            </a> 
+              <div class="card-action">
+                <b><a class="black-text" href="./views/estudianteseeuu.html" id="titu48">Ver proyecto</a></b>
+              </div>               
+            </div>
+          </div>
+        </div>                
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l6">
+          <div class="icon-block">
+            <a href="./views/looker.html" class="black-text"> 
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/portafolio/looker/looker1.png">
+              </div>
+              <div class="card-content">  
+                <div class="progress purple">
+                  <div class="indeterminate"></div>
+                </div>                           
+                <p id="titu49">Explorando el rendimiento de ventas con Looker Studio.</p>
+              </div>
+            </a> 
+              <div class="card-action">
+               <b><a class="black-text" href="./views/looker.html" id="titu50">Ver proyecto</a></b>
+              </div>               
+            </div>
+          </div>
+        </div> 
+        <div class="col s12 m12 l6">
+          <div class="icon-block">
+            <a href="./views/dashboard.html" class="black-text"> 
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/portafolio/power bi/power_bi2.png">
+              </div>
+              <div class="card-content">   
+                <div class="progress purple">
+                  <div class="indeterminate"></div>
+                </div>                         
+                <p id="titu51">Dashboard de ventas de videojuegos: Potenciando decisiones con Power BI.</p>
+              </div> 
+            </a> 
+              <div class="card-action">
+                <b><a class="black-text" href="./views/dashboard.html" id="titu52">Ver proyecto</a></b>
+               </div>              
+            </div>
+          </div>
+        </div>  
+        <div class="col s12 m12 l6">
+          <div class="icon-block">
+            <a href="./views/businessi.html" class="black-text">
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/portafolio/business_intelligence/businesinteligence.png">
+              </div>
+              <div class="card-content"> 
+                <div class="progress purple">
+                  <div class="indeterminate"></div>
+                </div>                            
+                <p id="titu53">Analizando el comportamiento del cliente y las ventas con Power BI.</p>
+              </div> 
+            </a> 
+              <div class="card-action">
+                <b><a class="black-text" href="/views/businessi.html" id="titu54">Ver proyecto</a></b>
+               </div>               
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l6">
+          <div class="icon-block">
+            <a href="./views/tableau.html" class="black-text"> 
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/portafolio/tableau/Dashboard 2.png">
+              </div>
+              <div class="card-content">
+                <div class="progress purple">
+                  <div class="indeterminate"></div>
+                </div>                             
+                <p id="titu55">Optimización del rendimiento de un restaurante: análisis y estrategias con Tableau.</p>
+              </div>
+            </a> 
+              <div class="card-action">
+                <b><a class="black-text" href="/public/views/tableau.html" id="titu56">Ver proyecto</a></b>
+               </div>               
+            </div>
+          </div>
+        </div>          
+    </div>   
+  </div>
+  </div>
+</div>
+<!--   parallax  -->
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>      
+      <div class="row center">          
+      </div>        
+      <br><br>
+    </div>
+  </div>
+  <div class="parallax"><img src="./assets/img/p2.png" alt="Unsplashed background img 1"></div>
+</div>
   <!--   certificados  -->
   <div class="container" id="certificados">
     <div class="section">
-      <h1 class="header center black-text text-lighten-1">Certificados</h1>
+      <h1 class="header center black-text text-lighten-1" id="titu34">Certificados</h1>
+      <div class="divider"></div>
       <div class="row">
         <div class="col s12 m12 l4">
           <div class="icon-block">
@@ -213,11 +339,11 @@
                 <img class="activator" src="./assets/img/certificados/analisisdatos.png">
               </div>
               <div class="card-content">
-               <span class="card-title activator grey-text text-darken-4">Análisis de datos<i class="material-icons right">more_vert</i></span>               
+               <span class="card-title activator grey-text text-darken-4" id="titu35">Análisis de datos<i class="material-icons right">more_vert</i></span>               
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p> Comprendí conceptos básicos utilizados en análisis de datos y también el uso de herramientas de software para análisis y visualización de datos.</p>
+                <p id="titu36"> Comprendí conceptos básicos utilizados en análisis de datos y también el uso de herramientas de software para análisis y visualización de datos.</p>
               </div>
             </div>
           </div>
@@ -234,7 +360,7 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>En este curso pude ver los conceptos básicos de programación, como aritmetica, variables, funciones, tipos de datos, condiciones y declaraciones condicionales.</p>
+                <p id="titu37">En este curso pude ver los conceptos básicos de programación, como aritmetica, variables, funciones, tipos de datos, condiciones y declaraciones condicionales.</p>
               </div>
             </div>
           </div>
@@ -251,7 +377,7 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>En este curso aprendí los conceptos básicos de HTML, como listas, atributos y tablas.</p>
+                <p id="titu38">En este curso aprendí los conceptos básicos de HTML, como listas, atributos y tablas.</p>
               </div>
             </div>
           </div>
@@ -265,11 +391,11 @@
                 <img class="activator" src="./assets/img/certificados/analisisempresarial.png">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Análisis empresarial<i class="material-icons right">more_vert</i></span>              
+                <span class="card-title activator grey-text text-darken-4" id="titu39">Análisis empresarial<i class="material-icons right">more_vert</i></span>              
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Descrubí los conceptos básicos del análisis de negocios, los procesos clave y el uso de herramientas de software para tareas comunes de análisis empresarial.</p>
+                <p id="titu40">Descrubí los conceptos básicos del análisis de negocios, los procesos clave y el uso de herramientas de software para tareas comunes de análisis empresarial.</p>
               </div>
             </div>
           </div>
@@ -285,7 +411,7 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>En este curso pude aprender a crear y mantener una presencia efectiva en redes sociales, gestionar la interacción con seguidores y crear contenido atractivo para promover la marca.</p>
+                <p id="titu41">En este curso pude aprender a crear y mantener una presencia efectiva en redes sociales, gestionar la interacción con seguidores y crear contenido atractivo para promover la marca.</p>
               </div>
             </div>
           </div>
@@ -301,91 +427,155 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Conocí los conceptos básicos del uso de JavaScript para crear un sitio web interactivo.</p>
+                <p id="titu42">Conocí los conceptos básicos del uso de JavaScript para crear un sitio web interactivo.</p>
               </div>
             </div>
           </div>
         </div>        
-    </div>   
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l4">
+        <div class="icon-block">
+          <div class="card hoverable ss_card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./assets/img/certificados/powerbi.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4" id="titu39">Power Bi<i class="material-icons right">more_vert</i></span>              
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+              <p id="titu63">Adquirí los conocimientos necesarios para poder crear informes y cuadros de mando con Power BI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l4">
+        <div class="icon-block">
+          <div class="card hoverable ss_card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./assets/img/certificados/scrum.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Scrum<i class="material-icons right">more_vert</i></span>            
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+              <p id="titu64">Aprendí en este curso técnicas avanzadas de Scrum para mejorar la eficiencia, técnicas para interceder por el equipo y cómo eliminar obstáculos para llegar al éxito. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l4">
+        <div class="icon-block">
+          <div class="card hoverable ss_card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./assets/img/certificados/python1.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Introduction to Python<i class="material-icons right">more_vert</i></span>              
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+              <p id="titu65">Conocí los conceptos básicos de Python, además de crear proyectos de la vida real y resolver diferentes desafíos de codificación.</p>
+            </div>
+          </div>
+        </div>
+      </div>        
+  </div>   
   </div>
-  </div> 
-  <!--Herramientas Section-->
+  </div>
+  <!--   parallax  -->
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>      
+      <div class="row center">          
+      </div>        
+      <br><br>
+    </div>
+  </div>
+  <div class="parallax"><img src="./assets/img/p2.png" alt="Unsplashed background img 1"></div>
+</div>
+
+  <!--Conocimientos Section-->
 <div class="container section scrollspy" id="herramientas">
   <h1 class="header center black-text text-lighten-1">Conocimientos</h1>  
+  <div class="divider"></div>
   <div class="card hoverable white" id="card-hab">
     <div class="row">
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Microsoft Excel </h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Microsoft Excel 80% </h6> 
         <div class="progress">
-          <div class="determinate purple" style="width: 70%;"></div>
+          <div class="determinate purple" style="width: 80%;"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Microsoft Access </h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Microsoft Access 70% </h6> 
         <div class="progress">
-          <div class="determinate purple" style="width: 90%"></div>
+          <div class="determinate purple" style="width: 70%"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">SQL</h6>
+        <h6 class="header center blue-grey-text text-darken-2">SQL 40%</h6>
         <div class="progress">
-          <div class="determinate purple" style="width: 30%"></div>
+          <div class="determinate purple" style="width: 40%"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Power Query</h6>
+        <h6 class="header center blue-grey-text text-darken-2">Power Query 60%</h6>
         <div class="progress">
-          <div class="determinate purple" style="width: 50%"></div>
+          <div class="determinate purple" style="width: 60%"></div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Python </h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Python 25%</h6> 
         <div class="progress">
           <div class="determinate purple" style="width: 25%;"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Power BI</h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Power BI 70%</h6> 
         <div class="progress">
           <div class="determinate purple" style="width: 70%"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Looker Studio</h6>
+        <h6 class="header center blue-grey-text text-darken-2">Looker Studio 60%</h6>
         <div class="progress">
           <div class="determinate purple" style="width: 60%"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Tableau</h6>
+        <h6 class="header center blue-grey-text text-darken-2">Tableau 60%</h6>
         <div class="progress">
-          <div class="determinate purple" style="width: 100%"></div>
+          <div class="determinate purple" style="width: 60%"></div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Google Analytics</h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Google Analytics 50%</h6> 
         <div class="progress">
-          <div class="determinate purple" style="width: 70%;"></div>
+          <div class="determinate purple" style="width: 50%;"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">WhatsApp Business</h6> 
+        <h6 class="header center blue-grey-text text-darken-2">WhatsApp Business 70%</h6> 
         <div class="progress">
           <div class="determinate purple" style="width: 70%"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Wordpress</h6>
+        <h6 class="header center blue-grey-text text-darken-2">Wordpress 30%</h6>
         <div class="progress">
           <div class="determinate purple" style="width: 30%"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Meta Business Suite</h6>
+        <h6 class="header center blue-grey-text text-darken-2">Meta Business Suite 70%</h6>
         <div class="progress">
           <div class="determinate purple" style="width: 70%"></div>
         </div>
@@ -393,27 +583,27 @@
     </div>
     <div class="row">
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Canva</h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Canva 80%</h6> 
         <div class="progress">
-          <div class="determinate purple" style="width: 70%;"></div>
+          <div class="determinate purple" style="width: 80%;"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Clipchamp</h6> 
+        <h6 class="header center blue-grey-text text-darken-2">Clipchamp 80%</h6> 
+        <div class="progress">
+          <div class="determinate purple" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="col s6 m6 l3">
+        <h6 class="header center blue-grey-text text-darken-2">Google Sheets 70% </h6>
         <div class="progress">
           <div class="determinate purple" style="width: 70%"></div>
         </div>
       </div>
       <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Google Sheets </h6>
+        <h6 class="header center blue-grey-text text-darken-2" id="titu43">Redes Sociales 80%</h6>
         <div class="progress">
-          <div class="determinate purple" style="width: 70%"></div>
-        </div>
-      </div>
-      <div class="col s6 m6 l3">
-        <h6 class="header center blue-grey-text text-darken-2">Redes Sociales</h6>
-        <div class="progress">
-          <div class="determinate purple" style="width: 70%"></div>
+          <div class="determinate purple" style="width: 80%"></div>
         </div>
       </div>
     </div>
@@ -426,179 +616,43 @@
       <div class="container">
         <br><br>      
         <div class="row center">          
-        </div>
-        <div class="row center">
-          <a href="#portafolio"  class="btn-large waves-effect waves-light pink lighten-1">Ver más</a>
-        </div>
+        </div>        
         <br><br>
       </div>
     </div>
     <div class="parallax"><img src="./assets/img/p2.png" alt="Unsplashed background img 1"></div>
   </div>
-  <div class="container section scrollspy" id="portafolio">
-    <div class="section">
-      <h1 class="header center black-text text-lighten-1">Proyectos</h1>
-      <!--   portafolio   -->
-      <div class="container">        
-      <div class="row">
-        <div class="col s12 m12 l6">
-          <div class="icon-block">
-            <div class="card medium hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/portafolio/campaña/marketing_excel.png">
-              </div>
-              <div class="card-content">    
-                <div class="progress  purple">
-                  <div class="indeterminate"></div>
-                </div>                          
-                <p>Guía de 10 pasos para evaluar el impacto de una campaña publicitaria.</p> 
-              </div>    
-              <div class="card-action">
-                <b><a class="black-text" href="./views/marketing.html">Ver proyecto</a></b>
-              </div>          
-            </div>
-          </div>
-        </div> 
-        <div class="col s12 m12 l6">
-          <div class="icon-block">
-            <div class="card medium hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/portafolio/estudiantes_eeuu/1.png">
-              </div>
-              <div class="card-content"> 
-                <div class="progress purple">
-                  <div class="indeterminate"></div>
-                </div>                            
-                <p>Análisis sobre la Salud Mental de estudiantes universitarios.</p>
-              </div> 
-              <div class="card-action">
-                <b><a class="black-text" href="./views/estudianteseeuu.html">Ver proyecto</a></b>
-              </div>               
-            </div>
-          </div>
-        </div>                
-      </div>
-      <div class="row">
-        <div class="col s12 m12 l6">
-          <div class="icon-block">
-            <div class="card medium hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/portafolio/looker/looker1.png">
-              </div>
-              <div class="card-content">  
-                <div class="progress purple">
-                  <div class="indeterminate"></div>
-                </div>                           
-                <p>Explorando el rendimiento de ventas con Looker Studio.</p>
-              </div>
-              <div class="card-action">
-               <b><a class="black-text" href="./views/looker.html">Ver proyecto</a></b>
-              </div>               
-            </div>
-          </div>
-        </div> 
-        <div class="col s12 m12 l6">
-          <div class="icon-block">
-            <div class="card medium hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/portafolio/power bi/power_bi2.png">
-              </div>
-              <div class="card-content">   
-                <div class="progress purple">
-                  <div class="indeterminate"></div>
-                </div>                         
-                <p>Dashboard de ventas de videojuegos: Potenciando decisiones con Power BI.</p>
-              </div> 
-              <div class="card-action">
-                <b><a class="black-text" href="./views/dashboard.html">Ver proyecto</a></b>
-               </div>              
-            </div>
-          </div>
-        </div>  
-        <div class="col s12 m12 l6">
-          <div class="icon-block">
-            <div class="card medium hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/portafolio/business_intelligence/businesinteligence.png">
-              </div>
-              <div class="card-content"> 
-                <div class="progress purple">
-                  <div class="indeterminate"></div>
-                </div>                            
-                <p>Analizando el comportamiento del cliente y las ventas con Power BI.</p>
-              </div> 
-              <div class="card-action">
-                <b><a class="black-text" href="/views/businessi.html">Ver proyecto</a></b>
-               </div>               
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m12 l6">
-          <div class="icon-block">
-            <div class="card medium hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/portafolio/tableau/Dashboard 2.png">
-              </div>
-              <div class="card-content">
-                <div class="progress purple">
-                  <div class="indeterminate"></div>
-                </div>                             
-                <p>Optimización del rendimiento de un restaurante: análisis y estrategias con Tableau.</p>
-              </div>
-              <div class="card-action">
-                <b><a class="black-text" href="/views/tableau.html" >Ver proyecto</a></b>
-               </div>               
-            </div>
-          </div>
-        </div>          
-    </div>   
-  </div>
-  </div>
-</div>
+  
 <!--   contacto   -->
 <div class="row container section scrollspy" id="contacto">
   <div class="col s12 m12 l12 hoverable" id="tarjeta_color">    
-    <h1 class="header center black-text text-lighten-1">Contacto</h1>
-    <h5 class="center">¡No dudes en escribirme por cualquier consulta!</h5>
+    <h1 class="header center black-text text-lighten-1" id="titu57">Contacto</h1>
+    <h5 class="center" id="titu58">¡No dudes en escribirme por cualquier consulta!</h5>
     <br>
-      <div class="card-content black-text center-align">        
-        <br>
-      </div>
-      <div class="card-action">
         <div class="row">
-          <div class="col s12 m12 l3 center-align">
-            <br>
-            <div class="center-align">
-              <a href="mailto:arianaspenza@hotmail.com" class="waves-effect waves-light btn-large cyan darken- hoverable" id="id_mail">
-                <i class="material-icons left">email</i>Mail</a>                
-            </div>
+          <div class="col s12 m12 l4 center-align" style="display: flex; justify-content: center;">                    
+              <a href="mailto:arianaspenza@hotmail.com" class="waves-effect waves-light btn-large center cyan darken hoverable" id="id_mail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                </svg>
+                <span style="margin-left: 1rem;">E-Mail</span></a>                          
           </div>
-          <div class="col s12 m12 l3 center-align">
-            <br>            
-            <div class="center-align">
-              <a href="https://www.linkedin.com/in/arianasp/" target="_blank" class="waves-effect waves-light btn-large   blue darken-1 hoverable" id="id_link"><i class="fab fa-linkedin"></i>
-                LinkedIn</a>             
-            </div>
+          <div class="col s12 m12 l4 center-align" style="display: flex; justify-content: center;">                     
+              <a href="https://www.linkedin.com/in/arianasp/" target="_blank" class="waves-effect waves-light btn-large center blue darken-1 hoverable" id="id_link"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+              <span style="margin-left: 1rem;">LinkedIn</span></a>                      
           </div>
-          <div class="col s12 m12 l3 center-align"> 
-            <br>           
-            <div class="center-align">
-              <a href="https://github.com/Ari8897" target="_blank" class="waves-effect waves-light btn-large black hoverable" id="id_git"><i class="fab fa-github"></i>
-                GitHub</a>
-            </div>
-          </div>
-          <div class="col s12 m12 l3 center-align"> 
-            <br>           
-            <div class="center-align">
-              <a href="./assets/files/CV_ArianaSpenza.pdf" target="_blank" class="waves-effect waves-light btn-large  pink hoverable" id="id_cv">
-                <i class="material-icons left">description</i>CV</a>
-            </div>
-          </div>
+          <div class="col s12 m12 l4 center-align" style="display: flex; justify-content: center;">                       
+              <a  href="https://github.com/Ari8897" target="_blank" class="waves-effect waves-light btn-large center black hoverable" id="id_git"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              <span style="margin-left: 1rem;">Github</span></a>            
+          </div>          
         </div>
-        <br>
-      </div>
-    </div>
-    
+        <br>      
+    </div>    
   </div>
   <div class="fixed-action-btn">
     <a href="#" id="#slice_id" class="btn-floating btn-large pink pulse">
@@ -608,30 +662,35 @@
     <div class="container">
       <div class="row">
          <div class="col l6 s12">          
-            <p>  ¡Tu interés significa mucho! 🚀 
-              <br>¡Gracias por visitar!</p>        
+            <p id="titu59"> ¡Tu interés significa mucho! 🚀 </p>   
+              <p id="titu60">¡Gracias por visitar!</p>        
         </div>
         <div class="col l4 offset-l2 s12">
             <!--links del footer-->
-            <b><h5 class="white-text">Contacto</h5></b>
+            <b><h5 class="white-text" id="titu61">Contacto</h5></b>
             <ul>              
-              <li><a class="white-text text-lighten-3" href="https://www.linkedin.com/in/arianasp/" target="_blank"><i class="fab fa-linkedin"></i>  LinkedIn</a></li>
-              <li><a class="white-text text-lighten-3" href="./assets/files/CV_ArianaSpenza.pdf" target="_blank"><i class="fas fa-file"></i></i> Descarga mi CV</a></li>
-              <li><a class="white-text text-lighten-3" href="mailto:arianaspenza@hotmail.com"><i class="fas fa-envelope"v></i> arianaspenza@hotmail.com</a></li>
+            
+              <li><a class="white-text text-lighten-3" href="./assets/files/CV_SpenzaAriana_es.pdf" target="_blank"><i class="material-icons left">file_download</i> CV Español</a></li>
+              <li><a class="white-text text-lighten-3" href="./assets/files/CV_SpenzaAriana_en.pdf" target="_blank"><i class="material-icons left">file_download</i> CV English</a></li>
+              <li><a class="white-text text-lighten-3" href="mailto:arianaspenza@hotmail.com"><i class="material-icons left">email</i> arianaspenza@hotmail.com</a></li>
             </ul>
           </div>
         </div>
       </div>
       <!--links del footer-->
       <div class="footer-copyright">
-        <div class="container">
-          Portafolio de Ariana Spenza
-       
+        <div class="container" id="titu62">
+          Portafolio de Ariana Spenza       
         </div>
       </div>
     </footer>       
       <script src="./js/materialize.min.js"></script>
-      <script src="./js/index.js"></script>  
+      <script src="./js/index.js"></script> 
+      <!--i18 nxt libreria-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.1/i18next.min.js" integrity="sha512-C2hlr1aDo7JovvX0ek3m40fkT5+/DDgHY6rL+mcYODMLn2sZ+rKBDSIdO0NU7Yzai7WMJdhTUNEeWICljXrycQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <!-- Carga los archivos JSON como módulos ES6 -->
+  <script type="text/javascript" src="./traslations/traslate_index.js"></script> 
     </main>
     </body>  
     </html>
