@@ -18,8 +18,7 @@ i18next.init({
               "titu_clave78": "I used data visualization libraries like Matplotlib to create informative and representative graphs. First generate a graph to visualize the number of students who have depression.",
               "titu_clave79": "And then, I generated bar graphs to show the number of students with anxiety, depression, depression, and panic attacks.",
               "titu_clave80": "This project allowed me to explore in depth the situation of university students in relation to anxiety, depression and specialized treatments.",
-              "titu_clave81": "Additionally, I was able to analyze key statistics, such as average age and academic performance. Combining SQL queries and visualizations in Jupyter Lab provided a complete view of the data and helped identify important patterns and trends. This analysis can be useful to educational institutions in identifying needs and implementing additional supports for students.",
-              "titu_clave82": "See next project",
+              "titu_clave81": "Additionally, I was able to analyze key statistics, such as average age and academic performance. Combining SQL queries and visualizations in Jupyter Lab provided a complete view of the data and helped identify important patterns and trends. This analysis can be useful to educational institutions in identifying needs and implementing additional supports for students.",             
               "titu_clave83": "Your interest means a lot! 🚀",
               "titu_clave84": "Contact",
               "titu_clave85": "Thanks for visiting!",
@@ -42,8 +41,7 @@ i18next.init({
               "titu_clave78": "Utilicé bibliotecas de visualización de datos como Matplotlib para crear gráficos informativos y representativos.En primer lugar genere un gráfico para visualizar la cantidad de alumnos que tienen depresión.",
               "titu_clave79": "Y luego, generé gráficos de barras para mostrar la cantidad de estudiantes con ansiedad, depresión, depresión y ataques de pánico.",
               "titu_clave80": "Este proyecto me permitió explorar en profundidad la situación de los estudiantes universitarios en relación con la ansiedad, la depresión y los tratamientos especializados.",
-              "titu_clave81": "Además, pude analizar estadísticas clave, como la edad promedio y el desempeño académico. La combinación de consultas SQL y visualizaciones en Jupyter Lab proporcionó una visión completa de los datos y ayudó a identificar patrones y tendencias importantes. Este análisis puede ser útil para las instituciones educativas en la identificación de necesidades y la implementación de apoyos adicionales para los estudiantes",
-              "titu_clave82": "Ver siguiente proyecto",
+              "titu_clave81": "Además, pude analizar estadísticas clave, como la edad promedio y el desempeño académico. La combinación de consultas SQL y visualizaciones en Jupyter Lab proporcionó una visión completa de los datos y ayudó a identificar patrones y tendencias importantes. Este análisis puede ser útil para las instituciones educativas en la identificación de necesidades y la implementación de apoyos adicionales para los estudiantes",             
               "titu_clave83": "¡Tu interés significa mucho! 🚀",
               "titu_clave84": "Contacto",
               "titu_clave85": "¡Gracias por visitar!",
@@ -72,8 +70,7 @@ function changeLanguage(language) {
         document.getElementById('titu78').textContent = t('titu_clave78');
         document.getElementById('titu79').textContent = t('titu_clave79');
         document.getElementById('titu80').textContent = t('titu_clave80');
-        document.getElementById('titu81').textContent = t('titu_clave81');
-        document.getElementById('titu82').textContent = t('titu_clave82');
+        document.getElementById('titu81').textContent = t('titu_clave81');       
         document.getElementById('titu83').textContent = t('titu_clave83');
         document.getElementById('titu84').textContent = t('titu_clave84');
         document.getElementById('titu85').textContent = t('titu_clave85');
